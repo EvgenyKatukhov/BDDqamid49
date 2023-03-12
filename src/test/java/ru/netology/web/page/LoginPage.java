@@ -14,6 +14,7 @@ public class LoginPage {
     private SelenideElement passwordFieled = $("[data-test-id=password] input");
     private SelenideElement loginButton = $("[data-test-id=action-login]");
 
+
     public VerificationPage validLogin(DataHelper.AuthInfo info) {
         loginFieled.setValue(info.getLogin());
         passwordFieled.setValue(info.getPassword());
